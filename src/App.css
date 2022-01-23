@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  --text-color-normal: #0a244d;
+  --text-color-light: #8cabd9;
+}
+
+html[data-theme="dark"] {
+  --text-color-normal: hsl(210, 10%, 62%);
+  --text-color-light: hsl(210, 15%, 35%);
+  --text-color-richer: hsl(210, 50%, 72%);
+  --text-color-highlight: hsl(25, 70%, 45%);
+}
+
+#root {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.container {
+  display: flex;
+  padding: 0 20px;
+  width: 100%;
+  width: 95%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.outer-container {
+  height: 100vh;
+}
+
+.left {
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  width: 20%;
+  border-radius: 8px;
+  font-size: 2vh;
+  height: 90%;
+}
+.map-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.country-stats {
+  padding: 10px 0;
+  border-bottom: 2px solid grey;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.map {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(30, 30, 30);
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+}
+
+.total-recovered {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.total-cases,
+.recovered,
+.deaths {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 30%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(30, 30, 30);
+  font-size: 2vh;
+}
+
+.death-icon {
+  width: 10rem;
+}
+
+.section-info {
+  width: 50%;
+}
+
+tbody {
+  height: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  border-radius: 8px;
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  height: 90%;
+}
+
+.total-count,
+.recovered-count,
+.death-count {
+  font-size: 2.5vh;
+}
+
+.table {
+  width: 100%;
+  height: 80%;
+}
+
+.headers div {
+  font-size: 2vh;
+  color: rgb(153, 153, 153);
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weekly-count {
+  font-size: 1.5vh;
+}
+
+.upper {
+  width: 100%;
+  flex: 1;
+}
+
+tr {
+  border-radius: 2px;
+  border-top: 1px solid gray;
+}
+
+tr:last-of-type {
+  border-bottom: 1px solid gray;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  font-size: 1.7vh;
+}
+
+.header-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-list-body {
+  font-size: 12px;
+  padding: 10px;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.stat-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-count {
+  font-size: 2.5vh;
+  color: rgb(153, 153, 153);
+}
+
+.weekly-change {
+  font-size: 1.5vh;
+}
+
+.stat-red {
+  color: red;
+}
+
+.stat-green {
+  color: green;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-graph {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chart-wrapper {
+  height: 90%;
+}
+
+.chart-header-wrapper {
+  height: 100%;
+}
+
+.chart-title {
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 2vh;
+  color: rgb(153, 153, 153);
+}
